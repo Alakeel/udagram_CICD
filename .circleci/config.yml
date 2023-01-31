@@ -24,8 +24,8 @@ jobs:
             echo "NPM --version"
             echo $(npm --version)
             echo "SECRETS"
-            echo $(POSTGRES_USERNAME)
-            echo $(AWS_SECRET_ACCESS_KEY)
+            echo $($POSTGRES_USERNAME)
+            echo $($AWS_SECRET_ACCESS_KEY)
             npm run frontend:install
       - run:
           name: Install API Dependencies
