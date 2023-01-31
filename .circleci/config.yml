@@ -23,9 +23,6 @@ jobs:
             echo $(node --version)
             echo "NPM --version"
             echo $(npm --version)
-            echo "SECRETS"
-            echo $POSTGRES_USERNAME
-            echo $AWS_SECRET_ACCESS_KEY
             npm run frontend:install
       - run:
           name: Install API Dependencies
@@ -59,7 +56,7 @@ jobs:
           command: |
             cd udagram/udagram-api
             eb use udagram-api-alakeel-dev
-            eb setenv POSTGRES_DB=${POSTGRES_DB} POSTGRES_HOST=${POSTGRES_HOST} POSTGRES_PASSWORD=${POSTGRES_PASSWORD} POSTGRES_USERNAME=${POSTGRES_USERNAME} JWT_SECRET=${JWT_SECRET}
+            eb setenv POSTGRES_DB=$POSTGRES_DB POSTGRES_HOST=$POSTGRES_HOST POSTGRES_PASSWORD=$POSTGRES_PASSWORD POSTGRES_USERNAME=$POSTGRES_USERNAME AWS_BUCKET=$AWS_BUCKET AWS_REGION=$AWS_REGION AWS_PROFILE=$AWS_PROFILE JWT_SECRET=$JWT_SECRET URL=$URL
             npm run deploy
 workflows:
   udagram:
