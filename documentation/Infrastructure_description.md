@@ -1,15 +1,15 @@
-# Infrastructure_description
+# Infrastructure Description
 
-## Process Workflow
+## Overview
+
+### Process Workflow
 
 1. End-user accesses front-end via (S3) endpoint.
 1. Front-end communicates with Backend API (AWS Elastic Beanstalk) & (EC2).
 1. Backend API communicates with database (Postgres) in (AWS RDS) to update/delete data.
 
-<br/>
-
-## Overview Architecture Diagram
-<img src="./screenshots/sc-infra-overview.png" alt="circleci" />
+### Infrastructure Diagram
+<img src="./screenshots/sc-infra-overview.png" alt="diagram" />
 
 ## AWS Cloud Service
 The following AWS services have been used to deploy and access the application from/to the cloud.
@@ -27,12 +27,6 @@ The following AWS services have been used to deploy and access the application f
 <img src="./screenshots/sc-aws-rds.png" alt="rds" />
 
 <br/>
-
-## CircleCI Pipeline Overview
-
-> Check **Pipeline_description.md** for more details.
-
-<img src="./screenshots/sc-circleci-2.png" alt="frontend" />
 
 ---
 @Author:

@@ -35,6 +35,9 @@ In this project I have demonstrated hosting full stack application in the Cloud 
 
 <img src="./documentation/screenshots/sc-circleci-2.png" alt="circleci" />
 
+#### CircleCI - Environment Secrets
+<img src="./documentation/screenshots/sc-circleci-env.png" alt="circleci" />
+
 #### 6.1 Build
 <img src="./documentation/screenshots/sc-circleci-3.png" alt="circleci" />
 
@@ -42,8 +45,11 @@ In this project I have demonstrated hosting full stack application in the Cloud 
 
 <img src="./documentation/screenshots/sc-circleci-4.png" alt="circleci" />
 
-### 7 Infrastructure Overview
-<img src="./documentation/screenshots/sc-infra-overview.png" alt="circleci" />
+### 7. Overview - Infrastructure Diagram
+<img src="./documentation/screenshots/sc-infra-overview.png" alt="infra diagram" />
+
+### 8. Overview - Pipeline Diagram
+<img src="./documentation/screenshots/sc-pipeline-overview.png" alt="pipeline diagram" />
 
 ---
 @Author:
